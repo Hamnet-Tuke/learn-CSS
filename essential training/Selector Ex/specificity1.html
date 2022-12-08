@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>inheritance and specificity</title>
+    <style>
+      /* inheritance - the element closest to the affected text takes on the color. Specificity is the same. */
+      div#div-id-1 em{
+        color: #fe6100;
+      }
+      p em {
+        color: #648fff;
+      }
+      em {
+        color: #dc267f;
+      }
+
+      /* not relevant to these examples */
+      div {
+        font-family: "Barlow", sans-serif;
+        line-height: 1.5;
+        width: 80%;
+        border: 5px solid #648fff;
+        padding: 2rem;
+        margin: 0 auto;
+        font-size: 2rem;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div-id-1" class="div-class">
+      <p>
+        Have you ever wondered about the benefits of
+        <a href="https://www.twotreesoliveoil.com" target="_blank">olive oil</a
+        >? Sure, it has <strong>amazing</strong> health benefits when you eat
+        it, but what else could it be used for? It turns out olive oil can be
+        used as part of your <em>skincare regimen</em> too. It’s not just for
+        cooking anymore!
+      </p>
+    </div>
+  </body>
+</html>

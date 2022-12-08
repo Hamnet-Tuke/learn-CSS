@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>begining,endingand arbitrary substring attribute</title>
+    <style>
+        /* [title~="first"]{
+            color: blue;
+        }
+        [title="first"]{
+            color: red;
+        }
+        
+        [title="fifth"]{
+            color: orange;
+        }
+        [title~="fifth"]{
+            color: green;
+        } */
+        [title^="fi"]{
+            color: red;
+        }
+        [title$="th"]{
+            border: 1px solid blue;
+        }
+        [title*="fi"]{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li title="first">Item First</li>
+      <li title="the first second">Number Two</li>
+      <li title="two from fifth">3 rocks</li>
+      <li title="fourth">Fourth or Forth?</li>
+      <li title="fifth">Fifth: last place</li>
+    </ul>
+  </body>
+</html>

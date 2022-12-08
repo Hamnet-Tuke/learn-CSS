@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      /* remember this includes :link and :visited */
+      /* LVFHA---Link Visited Focus Hover Active (order)*/
+      a:link {
+        color: green;
+        font-weight: bold;
+      }
+      a:focus, textarea:focus{
+          outline: 5px double purple;
+                }
+
+      a:hover {
+        text-decoration: none;
+      }
+      ul:focus-within{
+          background-color: yellow;
+      }
+      form:focus-within{
+          background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com" target="_blank">Visit LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com" target="_blank">Visit Microsoft</a>
+      </li>
+      <li><a href="https://www.google.com" target="_blank">Visit Google</a></li>
+    </ul>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

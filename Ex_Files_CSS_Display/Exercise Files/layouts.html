@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Understanding layouts
+        with inline flex & grid</title>
+    <style>
+      .row {
+        border: 2px solid red;
+        display: flex;
+      }
+      .box {
+        border: 2px dotted blue;
+        flex-basis: 20%;
+      }
+
+      /* This CSS is to make things pretty. Nothing needs to be changed here. */
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box">
+        <p>1.</p>
+      </div>
+      <div class="box">
+        <p>2.</p>
+      </div>
+      <div class="box">
+        <p>3.</p>
+      </div>
+      <div class="box">
+        <p>4.</p>
+      </div>
+    </div>
+  </body>
+</html>

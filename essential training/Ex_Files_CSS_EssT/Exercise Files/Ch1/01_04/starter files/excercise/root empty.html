@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>:root and :empty</title>
+    <style>
+      :root {
+        --standared-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div:empty{
+          background-color: goldenrod;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .cell {
+        background-color: tomato;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell">
+        Para with plenty of text. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perspiciatis accusamus esse natus voluptatem unde
+        porro numquam expedita enim fuga quod?
+      </div>
+      <div class="cell"><!--empty para --></div>
+      <div class="cell"> <!-- not empty para because of whitespace --></div>
+    </div>
+  </body>
+</html>

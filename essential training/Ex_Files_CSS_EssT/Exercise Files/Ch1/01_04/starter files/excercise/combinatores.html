@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>combinators</title>
+<style>p {
+    font-size: 20px;
+}
+section p {
+  color: red;
+}
+section > p {
+ color: blue;
+}
+h1 + p {
+  color: pink;
+}
+h1 ~ p {
+  color: green;
+}</style>
+</head>
+<body>
+    <section>
+        <p>Child of section</p>
+        <div>
+          <p>Descendant of section</p>
+        </div>
+        <p>Sibling to heading.</p>
+        <h1>Heading</h1>
+        <p>Sibling to heading.</p>
+        <p>Sibling to heading.</p>
+      </section>
+
+</body>
+</html>
+

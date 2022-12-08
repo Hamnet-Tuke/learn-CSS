@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>layer:impacting specificity through components</title>
+    <style>
+      /*the one that takes priority is the one that's going to come later in the document.  */
+      @layer figure, core;
+      @layer core {
+        body {
+          font-family: "Barlow", sans-serif;
+          line-height: 1.5;
+          margin: 0;
+          padding: 0;
+        }
+        header {
+          text-align: center;
+          background-color: #e1e1e1e1;
+          padding: 1rem 0;
+          border-bottom: 10px double #0b4585;
+        }
+        h1 {
+          font-family: "Marcellus SC", serif;
+          color: #0b4585;
+        }
+        article {
+          width: 90%;
+          margin: 0 auto 3rem auto;
+          display: flow-root;
+        }
+        .float-right {
+          float: right;
+          margin: 0 0 1rem 1rem;
+        }
+      }
+      @layer figure {
+        :root {
+          --radius: 10px;
+          --primary-color: #0b4585;
+        }
+
+        img {
+          max-width: 100%;
+          border-radius: var(--radius) var(--radius) 0 0;
+        }
+        figure {
+          font-family: "comic sans MS", sans-serif;
+          border: 1px solid var(--primary-color);
+          border-radius: var(--radius);
+          background-color: #85c2b6;
+          max-width: 475px;
+          margin: 0;
+        }
+        figcaption {
+          padding: 1rem;
+        }
+        .button {
+          background-color: var(--primary-color);
+          color: #fff;
+          text-decoration: none;
+          padding: 0.5rem;
+          border-radius: var(--radius);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://assets.codepen.io/296057/lil-ttoo-logo.png"
+        alt="Two Trees Olive Oil logo."
+      />
+      <h1>Two Trees Olive Oil Blog</h1>
+    </header>
+    <article>
+      <h2>Other amazing uses of olive oil</h2>
+      <figure class="float-right">
+        <img
+          src="https://assets.codepen.io/296057/lil-ttoo-olive.jpg"
+          alt="single olive on tree"
+        />
+        <figcaption>
+          <p>
+            Have you ever wondered about the benefits of
+            <a href="https://www.twotreesoliveoil.com" target="_blank"
+              >olive oil</a
+            >? Sure, it has <strong>amazing</strong> health benefits when you
+            eat it, but what else could it be used for?
+          </p>
+          <p>
+            It turns out olive oil can be used as part of your
+            <em>skincare regimen</em> too. It’s not just for cooking anymore!
+          </p>
+          <p><a href="#" class="button">Olive oil and skincare regimen</a></p>
+        </figcaption>
+      </figure>
+      <p>
+        Have you ever wondered about the benefits of olive oil? Sure, it has
+        amazing health benefits when you eat it, but what else could it be used
+        for? It turns out olive oil can be used as part of your skincare regime
+        too. It’s not just for cooking anymore!
+      </p>
+
+      <h3>Hair</h3>
+      <p>
+        Olive oil is amazing for hair because it can coat and protect the more
+        fragile strands and moisturize the scalp. Try:
+      </p>
+      <ul>
+        <li>
+          Conditioning the scalp and hair ends with olive oil 10-15 minutes
+          before a shower and then wash it away with your regular shampoo.
+        </li>
+        <li>Calm fly-away hairs by patting them with a little olive oil.</li>
+        <li>
+          Give your hair extra shine by rubbing olive oil in your hands and then
+          gently running your hands through your hair. If you want to add a
+          little scent try a few drops of tea tree, lavender, or rosemary oil.
+        </li>
+      </ul>
+
+      <h3>Hands & Feet</h3>
+      <p>
+        Olive oil can be used like lotion to cover microcracks in the skin, and
+        the benefits don’t end there:
+      </p>
+      <ul>
+        <li>
+          Heal cracked feet by washing them, applying olive oil while the feet
+          are slightly damp, and then put on socks to hold the olive oil against
+          the skin. For the best results do this at bedtime to allow the olive
+          oil the most time to soften the skin.
+        </li>
+        <li>
+          Use olive oil as a cuticle cream or a hand lotion to sooth and soften
+          the skin.
+        </li>
+        <li>
+          Scrub off dead skin to create shine by combining olive oil with lemon
+          juice and sugar. Rub this into any skin that’s looking dull or flakey
+          to get back a healthy glow.
+        </li>
+      </ul>
+
+      <h3>Face</h3>
+      <p>
+        It might seem strange to think about putting more oil on your face, but
+        it’s actually very beneficial when not used to excess. Olive oil should
+        be applied to a cotton ball and dabbed on the face, instead of being
+        rubbed on with fingers, to prevent clogging pores.
+      </p>
+      <ul>
+        <li>
+          Having a problem removing eye make-up? Apply olive oil to a cotton
+          ball and dab it on eyes to breakdown waterproof components and pull
+          oil-based make-up off the face. Then follow your normal skin care
+          routine to wash, tone, and moisturize.
+        </li>
+        <li>
+          Create a lip scrub using olive oil and sugar. Add lemon juice or
+          orange juice to give it extra flavor.
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

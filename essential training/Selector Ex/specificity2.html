@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>challenge</title>
+    <style>
+      /* for each of the below selectors, calculate the specificity.
+Then explain the selectors and why the affected LI styles look as follows:
+- hair section: first bullet green, other bullets yellow, all are bold and italic
+
+- hands and feet section: first bullet green, other bullets purple, all are bold and uppercase
+
+- face section: first bullet green, other bullet purple, all are bold.
+
+ */
+      /* specificity 0-1-1 */
+      .hair li {
+        color: #f1b54e; /* yellow */
+        font-style: italic;
+      }
+      /* specificity 0-1-1*/
+      li:first-child {
+        color: #9aa665; /* green */
+      }
+      /* specificity 0-0-1*/
+      li {
+        font-weight: bold;
+        color: #54356e; /* purple */
+      }
+      /* specificity 1-0-2 */
+      article > ul#hands {
+        color: #0b4585; /* blue */
+        text-transform: uppercase;
+      }
+
+      /* important styling but not part of this exercise */
+      body {
+        font-family: "Barlow", sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        background-color: #e1e1e1;
+        padding: 1rem 0;
+        border-bottom: 10px double #0b4585;
+      }
+      h1 {
+        font-family: "Marcellus SC", serif;
+        color: #0b4585;
+      }
+      article {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        display: flow-root;
+      }
+      .float-right {
+        float: right;
+        margin: 0 0 1rem 1rem;
+        shape-outside: polygon(
+          36.77% 38.24%,
+          70% 0%,
+          99.81% 0.06%,
+          93.99% 94.43%,
+          5.77% 89.55%,
+          0.72% 42.52%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://assets.codepen.io/296057/lil-ttoo-logo.png"
+        alt="Two Trees Olive Oil logo."
+      />
+      <h1>Two Trees Olive Oil Blog</h1>
+    </header>
+    <article>
+      <h2>Other amazing uses of olive oil</h2>
+      <img
+        src="https://assets.codepen.io/296057/lil-ttoo-olives.jpg"
+        alt="Illustration of an olive branch."
+        class="float-right"
+      />
+      <p>
+        Have you ever wondered about the benefits of olive oil? Sure, it has
+        amazing health benefits when you eat it, but what else could it be used
+        for? It turns out olive oil can be used as part of your skincare regime
+        too. It’s not just for cooking anymore!
+      </p>
+
+      <h3>Hair</h3>
+      <p>
+        Olive oil is amazing for hair because it can coat and protect the more
+        fragile strands and moisturize the scalp. Try:
+      </p>
+      <ul class="hair">
+        <li>
+          Conditioning the scalp and hair ends with olive oil 10-15 minutes
+          before a shower and then wash it away with your regular shampoo.
+        </li>
+        <li>Calm fly-away hairs by patting them with a little olive oil.</li>
+        <li>
+          Give your hair extra shine by rubbing olive oil in your hands and then
+          gently running your hands through your hair. If you want to add a
+          little scent try a few drops of tea tree, lavender, or rosemary oil.
+        </li>
+      </ul>
+
+      <h3>Hands & Feet</h3>
+      <p>
+        Olive oil can be used like lotion to cover microcracks in the skin, and
+        the benefits don’t end there:
+      </p>
+      <ul id="hands">
+        <li>
+          Heal cracked feet by washing them, applying olive oil while the feet
+          are slightly damp, and then put on socks to hold the olive oil against
+          the skin. For the best results do this at bedtime to allow the olive
+          oil the most time to soften the skin.
+        </li>
+        <li>
+          Use olive oil as a cuticle cream or a hand lotion to sooth and soften
+          the skin.
+        </li>
+        <li>
+          Scrub off dead skin to create shine by combining olive oil with lemon
+          juice and sugar. Rub this into any skin that’s looking dull or flakey
+          to get back a healthy glow.
+        </li>
+      </ul>
+
+      <h3>Face</h3>
+      <p>
+        It might seem strange to think about putting more oil on your face, but
+        it’s actually very beneficial when not used to excess. Olive oil should
+        be applied to a cotton ball and dabbed on the face, instead of being
+        rubbed on with fingers, to prevent clogging pores.
+      </p>
+      <ul>
+        <li>
+          Having a problem removing eye make-up? Apply olive oil to a cotton
+          ball and dab it on eyes to breakdown waterproof components and pull
+          oil-based make-up off the face. Then follow your normal skin care
+          routine to wash, tone, and moisturize.
+        </li>
+        <li>
+          Create a lip scrub using olive oil and sugar. Add lemon juice or
+          orange juice to give it extra flavor.
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

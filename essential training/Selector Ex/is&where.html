@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+        /* specificity:0-0-1 */
+      h1,
+      h2,
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* specificity: 0 b/c there is no ID-1 b/c there is 1 pseudoclass-2 b/c we are talking about two elements (0-1-2)  */
+      /* :is(article, aside) :is(h1, h2,h3, .intro, h3:pseudoclass) {
+        border-bottom: 2px solid green;} */
+      
+      /* speificity: 0-0-1 */
+      :is(article, aside) :where(h1, h2,h3, .intro, h3:pseudoclass) {
+        border-bottom: 2px solid green;
+        font-family: courier,monospace;
+    </style>
+  </head>
+  <body>
+    <h1>Understanding <code>:is()</code> and <code>:where()</code></h1>
+    <article>
+      <h2>H2 in an article</h2>
+      <p class="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sit?
+      </p>
+      <h3>H3 in an article</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sit?</p>
+    </article>
+    <section>
+      <h2>H2 in a section</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+        reprehenderit.
+      </p>
+      <h3>H3 in a section</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sit?</p>
+    </section>
+    <aside>
+      <h2>H2 in an aside</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+        reprehenderit.
+      </p>
+      <h3>H3 in an aside</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sit?</p>
+    </aside>
+  </body>
+</html>

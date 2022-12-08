@@ -1,0 +1,38 @@
+01-01 What is inheritance?
+https://codepen.io/jen4web/pen/gOoQzEM
+
+01-02 Examples of inheritance
+Begin: https://codepen.io/jen4web/pen/zYpMJOP
+End: https://codepen.io/jen4web/pen/ExoOejQ
+
+01-03 Understanding inherit value
+Begin: https://codepen.io/jen4web/pen/RwxqXLX
+End: https://codepen.io/jen4web/pen/popQMdw
+
+01-04 Initial, unset, revert
+Begin: https://codepen.io/jen4web/pen/abEQeeM
+End: https://codepen.io/jen4web/pen/WNdLebZ
+
+01-06 Challenge/solution: Comparing * and body
+https://codepen.io/jen4web/pen/abEPORz
+
+02-02 Selectors and order impact specificity
+Begin: https://codepen.io/jen4web/pen/MWrZwgX
+End: https://codepen.io/jen4web/pen/abEPOBg
+
+02-04 Inheritance and specificity
+Begin: https://codepen.io/jen4web/pen/gOoErdM
+End: https://codepen.io/jen4web/pen/VwyRaRL
+
+02-05 Challenge: Explaining specificity and inheritance
+https://codepen.io/jen4web/pen/PoELNMp
+
+02-06 Solution: Explaining specificity and inheritance
+https://codepen.io/jen4web/pen/bGaZZqa
+
+03-04 Working with @layer
+<figure> example to incorporate:
+https://codepen.io/jen4web/pen/XWVwgKB
+
+Begin: https://codepen.io/jen4web/pen/yLpWXzj
+End: https://codepen.io/jen4web/pen/YzYbxxQ

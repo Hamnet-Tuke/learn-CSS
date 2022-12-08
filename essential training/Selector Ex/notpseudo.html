@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img:not([alt]){
+          border:5px solid orange;
+      }
+      p:not(.notdemo){
+          color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="http://placekitten.com/300/200" />
+
+    <img src="http://placekitten.com/200/300" alt="cute kitties" />
+
+    <p class="notdemo">This paragraph has a class of notdemo.</p>
+    <p class="notdemo">This paragraph has a class of notdemo.</p>
+    <p>This paragraph does not have a class of notdemo.</p>
+    <p class="notdemo">This paragraph has a class of notdemo.</p>
+  </body>
+</html>

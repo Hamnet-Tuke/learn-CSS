@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+     a[href^="http"] {
+         background:url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png ) no-repeat right;
+         padding-right: 14px;
+     }
+     a[href *="http"]::after{
+         content: "(PDF)";
+
+     }  
+    </style>
+  </head>
+  <body>
+    <!-- use https://upload.wikimedia.org/wikipedia/
+        commons/6/64/Icon_External_Link.png 
+It is a 12px x 12px icon
+-->
+    <p><a href="https://www.google.com" target="_blank">I 
+        go to Google</a></p>
+
+    <p>
+      <a href="https://www.linkedin.com" target="_blank"
+            >I am a secure link to LinkedIn</a
+      >
+    </p>
+  </body>
+</html>
