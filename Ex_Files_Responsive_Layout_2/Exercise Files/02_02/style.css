@@ -1,0 +1,19 @@
+/* $color: red;
+article {
+    color: $color;
+}
+$color: blue
+p {
+    color:$color;
+} */
+
+
+
+
+
+
+/* font styling */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

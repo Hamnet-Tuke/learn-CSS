@@ -1,0 +1,52 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+   /* 1% of extra space assigned to the left and right of each box by flexbox via space-around property */
+  .col-1 { 
+  /* calc(25% - 1)*/
+    flex-basis: 24%;  
+  }
+  .col-2 {  
+    /*calc( 50% - 1) */
+    flex-basis: 49%;
+  }
+  .col-3 {
+    /* calc(75% - 1) */
+    flex-basis: 74%;
+  }
+  .col-4 {
+    /* calc(100% - 1) */
+    flex-basis: 99%;
+  }
+  
+  /* basic page styling */
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  div > div > div {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+  }
+  
+    .col-1 {
+    background-color: #FAB02D;
+  }
+  .col-2 {
+    background-color: #7F1640;
+  }
+  .col-3 {
+    background-color: #244577;
+  }
+  .col-4 {
+    background-color: #59B3AD;
+  }

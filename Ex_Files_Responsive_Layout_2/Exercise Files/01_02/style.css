@@ -1,0 +1,45 @@
+/* Starting code from https://type-scale.com/ using the Minor Third (1.2) scaling factor and Roboto text.
+Use calc() to show documentation of how these numbers below are derived. */
+h1 {font-size: 2.488em;}
+/* calc (1em * 1.2 * 1.2 * 1.2 * 1.2 * 1.2) */
+
+h2 {font-size: 2.074em;}
+/* calc(1em * 1.2 * 1.2 * 1.2 * 1.2) */
+
+h3 {font-size: 1.728em;}
+/* calc(1em * 1.2 * 1.2 * 1.2 ) */
+
+h4 {font-size: 1.44em;}
+/* calc(1em * 1.2 * 1.2) */
+
+h5 {font-size: 1.2em;}
+/* calc(1em * 1.2) */
+
+p {font-size: 1em;}
+
+small, .text_small {font-size: 0.833em;}
+/* calc(1em / 1.2) */
+
+
+
+/* general page styling */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:400');
+
+html {font-size: 16px;}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}

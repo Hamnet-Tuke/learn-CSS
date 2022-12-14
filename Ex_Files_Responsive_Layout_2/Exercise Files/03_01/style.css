@@ -1,0 +1,125 @@
+/* cell background colors to help guide layout */
+.col-1-2,
+col-1-4{
+        background-color:#ffc ;
+          
+    }
+    .col-2,
+    .col-2-4{
+        background-color: #fcf;
+          
+    }
+    .col-3{
+        background-color: #cff;
+          
+    }
+    .col-4{
+        background-color: #ccf;
+          
+    }
+   
+/* grid system -- mobile first! */
+.row{
+    display:flex;
+    flex-flow:wrap;
+    justify-content: space-between  ;
+}
+[class*="col-"] {
+    flex-basis:100%;
+}
+@media (min-width:480px){
+
+.col-1-2,
+.col-2  {
+    flex-basis:48%;
+        
+}
+.col-2-4,
+.col-3,
+.col-4 {
+    flex-basis:100%;
+      
+}
+.col-4{
+    flex-basis:100%;
+      
+}
+
+}
+@media (min-width:768px){
+
+
+.col-1-2,
+.col-1-4 {
+        flex-basis:22%;
+          
+    }
+    .col-2,
+    .col-2-4 {
+        flex-basis:48%;
+          
+    }
+    .col-3{
+        flex-basis:74%;
+          
+    }
+    .col-4{
+        flex-basis:100%;
+          
+    }
+    .order-a{
+        order:2
+    }
+    .order-b{
+        order:1
+    }
+    .order-c{
+        order:3
+    }
+    }
+
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+  }
+  *, 
+  *::before, 
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      font-family: Arial, Geneva, sans-serif;
+    margin: 0;
+      padding: 0;
+  }
+  a {
+      color: #2772B0;
+  }
+  .wrapper {
+      width: 97%;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+  }
+  
+  img {
+      width: 100%;
+      max-width: 225px; 
+  }
+  .col-1-2,
+  .col-1-4 {
+      background-color: #ffc;
+  }
+  .col-2,
+  .col-2-4 {
+      background-color: #fcf;
+  }
+  .col-3 {
+      background-color: #cff;
+  }
+  .col-4 {
+      background-color: #ccf;
+  }
+  
