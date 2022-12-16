@@ -204,6 +204,8 @@ footer {
     }
     article {
         margin-bottom: 0;
+        widows: 3;
+        /* widows works on chrom not on firefox */
     }
     .articlebody {
         columns: 2;

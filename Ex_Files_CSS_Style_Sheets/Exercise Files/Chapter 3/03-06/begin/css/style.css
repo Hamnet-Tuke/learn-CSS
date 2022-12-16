@@ -229,4 +229,13 @@ footer {
         color: black;
         margin: 0;
     }
+    @page{
+        margin:0.5in;
+    }
+    @page :left{
+        margin-right: 2in ;
+    }
+    @page :right{
+        margin-left: 2in ;
+    }
 }

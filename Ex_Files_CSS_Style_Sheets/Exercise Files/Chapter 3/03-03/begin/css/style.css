@@ -201,6 +201,10 @@ footer {
     }
     article {
         margin-bottom: 0;
+        
+    }
+    .articlebody{
+        columns:2;
     }
     aside {
         margin: 0;
