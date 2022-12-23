@@ -4,28 +4,35 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Creating a Responsive Web Design</title>
-    <link
+ <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="/css/screen.css"
+    /> 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="print"
+      href="/css/print.css"
     />
   </head>
   <body>
     <div id="page">
       <header>
         <a class="logo" title="Everyday Things" href="http://codifydesign.com"
-          ><span>Everyday Things</span> </a
-        >
+          ><span>Everyday Things</span>
+        </a>
         <div class="hero">
           <h1>Add interest with natural textures</h1>
           <a class="btn" title="Get advice from top designers" href="#"
-            >Get advice from top designers</a
+            >Get advice<span> from top designers</span></a
           >
         </div>
       </header>
+
       <section class="main">
-		        <aside>
+        <aside>
           <div class="content trending">
             <h3><a href="#">What&apos;s trending</a></h3>
             <p>
@@ -94,79 +101,95 @@
         </aside>
         <aside>
           <div class="content">
-			<img
+            <img
               alt="choosing the proper lighting"
               src="/images/photo_lighting.jpg"
             />
-			<h4>How-To: Lighting</h4>
-			<p>Morbi commodo, ipsum sed pharetra gravida magna rhoncus neque id pulvinar odio lorem non turpis nullam sit amet.</p>
-			<a title="Learn how to choose the proper lighting." href="http://codifydesign.com">Learn more</a>
-		  </div>
+            <h4>How-To: Lighting</h4>
+            <p>
+              Morbi commodo, ipsum sed pharetra gravida magna rhoncus neque id
+              pulvinar odio lorem non turpis nullam sit amet.
+            </p>
+            <a
+              title="Learn how to choose the proper lighting."
+              href="http://codifydesign.com"
+              >Learn more</a
+            >
+          </div>
         </aside>
         <blockquote>
-			<p class="quote">Lorem ipsum dolor sit amet conse ctetuer adipiscing elit. Morbi comod sed dolor sit amet consect adipiscing elit.</p>
-			<p class="credit"> <strong>Author Name</strong> <br><em>Business Title</em><br> Company</p>
-		</blockquote>
+          <p class="quote">
+            Lorem ipsum dolor sit amet conse ctetuer adipiscing elit. Morbi
+            comod sed dolor sit amet consect adipiscing elit.
+          </p>
+          <p class="credit">
+            <strong>Author Name</strong> <br /><em>Business Title</em><br />
+            Company
+          </p>
+        </blockquote>
       </section>
       <nav>
-		<ul>
-			<li>
-				<a title="About Us" href="#">About Us</a>
-				<ul>
-					<li>
-						<a title="Sub Link 1" href="#">Sub Link 1</a>	
-					</li>
-					<li>
-						<a title="Sub Link 2" href="#">Sub Link 2</a>	
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a title="Design Corner" href="#">Design Corner</a>
-				<ul>
-					<li>
-						<a title="Sub Link 1" href="#">Sub Link 1</a>	
-					</li>
-					<li>
-						<a title="Sub Link 2" href="#">Sub Link 2</a>	
-					</li>
-					<li>
-						<a title="Sub Link 3" href="#">Sub Link 3</a>
-						<ul>
-							<li>
-								<a title="Sub sub Link 1" href="#">Sub sub Link 1</a>	
-							</li>
-							<li>
-								<a title="Sub sub Link 2" href="#">Sub sub Link 2</a>	
-							</li>
-						</ul>	
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a title="Products" href="#">Products</a>
-				<ul>
-					<li>
-						<a title="Sub Link 1" href="#">Sub Link 1</a>	
-					</li>
-					<li>
-						<a title="Sub Link 2" href="#">Sub Link 2</a>	
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a title="Contact Us" href="#">Contact Us</a>
-			</li>
-		</ul>
-	  </nav>
+        <ul>
+          <li>
+            <a title="About Us" href="#" aria-haspopup="true">About Us</a>
+            <ul>
+              <li>
+                <a title="Sub Link 1" href="#">Sub Link 1</a>
+              </li>
+              <li>
+                <a title="Sub Link 2" href="#">Sub Link 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a title="Design Corner" href="#" aria-haspopup="true"
+              >Design Corner</a
+            >
+            <ul>
+              <li>
+                <a title="Sub Link 1" href="#">Sub Link 1</a>
+              </li>
+              <li>
+                <a title="Sub Link 2" href="#">Sub Link 2</a>
+              </li>
+              <li>
+                <a title="Sub Link 3" href="#" aria-haspopup="true"
+                  >Sub Link 3</a
+                >
+                <ul>
+                  <li>
+                    <a title="Sub sub Link 1" href="#">Sub sub Link 1</a>
+                  </li>
+                  <li>
+                    <a title="Sub sub Link 2" href="#">Sub sub Link 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a title="Products" href="#" aria-haspopup="true">Products</a>
+            <ul>
+              <li>
+                <a title="Sub Link 1" href="#">Sub Link 1</a>
+              </li>
+              <li>
+                <a title="Sub Link 2" href="#">Sub Link 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a title="Contact Us" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
       <footer>
-		&copy; Everyday Things
-		<div class="content">
-			<a title="Privacy Policy" href="#">Privacy Policy</a>
-			<a title="Terms of Service" href="#">Terms of Service</a>
-		</div>
-	  </footer>
+        &copy; Everyday Things
+        <div class="content">
+          <a title="Privacy Policy" href="#">Privacy Policy</a>
+          <a title="Terms of Service" href="#">Terms of Service</a>
+        </div>
+      </footer>
     </div>
-
   </body>
 </html>
